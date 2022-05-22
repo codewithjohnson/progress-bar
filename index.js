@@ -9,49 +9,45 @@ const resetValue = 0;
 
 
 
-const increaseBar = ()=>{
-    initialValue += 20;
-    progress.value = initialValue;
+const increaseBar = () => {
+    if (progress.value !== maxValue) {
+        initialValue += 20;
+        progress.value = initialValue;
+    }
 };
 
-const decreaseBar = ()=>{
+const decreaseBar = () => {
     initialValue -= 20;
     progress.value = initialValue;
 };
 
-const completeBar = ()=>{
+const completeBar = () => {
     progress.value = maxValue;
 };
 
-const resetBar = ()=>{
+const resetBar = () => {
     progress.value = resetValue;
 };
 
 
 
-increaseBtn.addEventListener('click',()=>{
-    console.log('HELLO INCREASE');
+increaseBtn.addEventListener('click', () => {
     increaseBar();
 });
 
 
-decreaseBtn.addEventListener('click',()=>{
-    console.log('HELLO DECREASE');
+decreaseBtn.addEventListener('click', () => {
     decreaseBar();
 });
 
 
-completeBtn.addEventListener('click',()=>{
-    console.log('HELLO COMPLETE');
+completeBtn.addEventListener('click', () => {
     completeBar();
 });
 
 
-resetBtn.addEventListener('click',(e)=>{
+resetBtn.addEventListener('click', (e) => {
     e.preventDefault();
     resetBar();
     location.reload();
 });
-
-
-

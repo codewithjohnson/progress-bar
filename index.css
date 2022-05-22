@@ -35,9 +35,8 @@ p{
 }
 
 progress{
-    height: 3vh;
-    width: 60vw;
-
+    height: 2vh;
+    width: 70vw;
 }
 
 .boxes{
@@ -93,6 +92,10 @@ button:hover{
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 5rem;
+    }
+
+    progress{
+        width:70vw;
     }
 }
 

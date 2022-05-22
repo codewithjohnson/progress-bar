@@ -99,3 +99,7 @@ button:hover{
     }
 }
 
+
+.current-value{
+    color:rgb(0, 255, 200);
+}

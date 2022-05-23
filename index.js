@@ -25,7 +25,9 @@ const decreaseBar = () => {
 };
 
 const completeBar = () => {
-    progress.value = maxValue;
+   
+    initialValue = maxValue;
+    progress.value = initialValue;
     currentValue.innerHTML = `<span> ${progress.value}% </span>`;
 };
 

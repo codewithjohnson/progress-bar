@@ -103,3 +103,10 @@ button:hover{
 .current-value{
     color:rgb(0, 255, 200);
 }
+
+
+@media print{
+    body {
+        background-color:deeporange;
+    }
+}
